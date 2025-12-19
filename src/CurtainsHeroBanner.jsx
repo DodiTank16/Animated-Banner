@@ -38,7 +38,7 @@ export default function HeroSection() {
 
   return (
     <section
-      className="hidden lg:flex h-screen w-full bg-cover bg-center"
+      className="hidden lg:flex h-147 w-full bg-cover bg-center"
       style={{
         backgroundImage:
           "url(https://fujisilvertech.com/wp-content/themes/fujisilvertech/assets/img/fuji-silvertech-banner-img03.jpg)",
@@ -66,19 +66,16 @@ export default function HeroSection() {
             className={`relative flex transition-all duration-700 ease-in-out cursor-pointer
               ${active === cat.id ? "flex-[3]" : "flex-[1]"}`}
           >
-            {/* Background */}
             <div
               className="absolute inset-0 bg-cover bg-center transition-opacity duration-700"
               style={{ backgroundImage: `url(${cat.bg})` }}
             />
 
-            {/* Overlay */}
             <div
               className={`absolute inset-0 transition-all duration-700
                 ${active === cat.id ? "bg-black/30" : "bg-black/60"}`}
             />
 
-            {/* Content */}
             <div className="relative z-10 flex h-full w-full flex-col items-center justify-center text-center">
               <img
                 src={cat.icon}

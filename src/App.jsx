@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import BannerOne from "./HeroBanner";
 import BannerTwo from "./CurtainsHeroBanner";
 
@@ -32,6 +32,10 @@ const App = () => {
           >
             Previous
           </button>
+
+          <p className="mt-5 pb-5 text-center text-4xl font-bold text-[#91C4C3]">
+            ⚡️Replicated by Dodi Tank⚡️
+          </p>
 
           <button
             onClick={nextBanner}
