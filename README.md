@@ -91,4 +91,4 @@ Please ensure proper permission is obtained before using any third-party assets 
 
 ## 🙌 Author
 
-Developed using React with a focus on clean UI, component-based architecture, and scalable state management.
+Developed by [Dodi Tank](https://github.com/DodiTank16)
