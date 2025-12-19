@@ -39,11 +39,8 @@ const categories = [
   },
 ];
 
-const defaultBg =
-  "https://fujisilvertech.com/wp-content/themes/fujisilvertech/assets/img/fuji-silvertech-banner-img03.jpg";
-
 const HeroBanner = () => {
-  const [activeBg, setActiveBg] = useState(defaultBg);
+  const [activeBg, setActiveBg] = useState(categories[3].bg);
   const [activeId, setActiveId] = useState(null);
 
   return (
@@ -63,7 +60,7 @@ const HeroBanner = () => {
           <br />
           is
           <br />
-          Precast
+          Here
         </h2>
       </div>
 
@@ -76,7 +73,7 @@ const HeroBanner = () => {
             setActiveId(item.id);
           }}
           onMouseLeave={() => {
-            setActiveBg(defaultBg);
+            setActiveBg(categories[3].bg);
             setActiveId(null);
           }}
         >
